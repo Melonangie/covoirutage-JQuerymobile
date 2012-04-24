@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {  }
+body { margin: 0; padding: 0; font-size: 14px; }
+a {text-decoration:none; color:rgb(66,78,77);}
+.ui-page.ui-body-c.ui-page-active .ui-content { background: url(images/banner_shadow.jpg) repeat-x 0px 0px; }
+.ui-page.ui-body-c.ui-page-active .ui-header {  background: url(images/banner_main.jpg) 50% 0px; border: .1px solid #fff; }
+#page.ui-page.ui-body-c.ui-page-active .ui-content { background: none; }
+#page { padding-top: 40px; background: url(images/banner_main.jpg) no-repeat 50% 0px ;}
+#page .heading { display: none; }
+#page .logo { width: 150px; height: 90px; margin: auto; background: url(images/logo.png) no-repeat center 0px; }
+#page .mainmenu {
+	margin: 25px;
+	border: none;
+}
+#page .mainmenu li { background: none; border: none; }
+#page .mainmenu li a {
+	border: 1px solid #fff;
+	border-radius: 16px;
+	color: #ffffff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	text-decoration: none;
+	display: block;
+	background: rgba(51,114,135,.8)  url(../images/mobile_link_arrow.png) no-repeat right 50%;
+	font-size: 1.15em;
+	font-weight: normal;
+	margin: 2px 4px;
+	padding: 7px 20px 10px 50px;
+}
+.ui-li-icon{ margin-top: -3px; margin-left:10px;}
+.ui-bar-a.ui-footer { background: rgb(221,230,218);  border: none; }
+.ui-bar-a.ui-footer h4.ui-title { font-weight: normal; text-align: center; color:rgb(66,78,77); padding: 15px; }
+.ui-content {  }
+h1 {  color:rgb(66,78,77);}
+h2 { font-size: 1.5em; }
+figure { width: 120px; float: right; margin: 0px 0px 20px 15px; padding: 0px 0px 0px 10px; border-left: 1px solid #ddd; }
+figure figcaption { font-size: .8em; color: #777; line-height: .8em; }

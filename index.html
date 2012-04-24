@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html>
+<!-- This template was designed and developed by Chris Converse, Codify Design Studio -->
+<head>
+<title>jQuery Mobile Web App</title>
+<meta charset="UTF-8">
+<link href="jquery-mobile/jquery.mobile-1.1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<script src="jquery-mobile/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.1.0.min.js" type="text/javascript"></script>
+</head> 
+<body>
+<div data-role="page" id="page">
+	<!-- The 'logo' DIV below was added to the default markup -->
+	<div class="logo"></div>
+	<div data-role="header" class="heading">
+		<h1>Your Organization</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview" class="mainmenu">
+			<li><a href="#page2" ><img src="images/Google.png" class="ui-li-icon"> Google V3 API</a></li>
+            <li><a href="#page3"><img src="images/html5.jpeg" class="ui-li-icon"> Geolocation API</a></li>
+            <li><a href="#page4"><img src="images/ui.png" class="ui-li-icon"> jquery-ui-map Library</a></li>
+            <li><a href="#page5"><img src="images/ui.png" class="ui-li-icon">Page Five</a></li>
+            <li><a href="#page6"><img src="images/ui.png" class="ui-li-icon">Page Six</a> </li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Covoiturage</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2" data-add-back-btn="true" data-back-btn-theme="e">
+	<div data-role="header">
+		<h1>Who We Are</h1>
+	</div>
+	<div data-role="content">	
+    <h2>This example is to test the fixed navbar</h2>
+		<p>Nunc auctor bibendum eros. Maecenas porta accumsan mauris. Etiam enim enim, elementum sed, bibendum quis, rhoncus non, metus. Fusce neque dolor, adipiscing sed, consectetuer et, lacinia sit amet, quam. Suspendisse wisi quam, consectetuer in, blandit sed, suscipit eu, eros. Etiam ligula enim, tempor ut, blandit nec, mollis eu, lectus. Nam cursus. Vivamus iaculis. Aenean risus purus, pharetra in, blandit quis, gravida a, turpis. Donec nisl. Aenean eget mi. Fusce mattis est id diam. Phasellus faucibus interdum sapien. Duis quis nunc. Sed enim.</p>		
+	<p>After the function verifies that geolocation is supported by the browser, calls getCurrentPosition and uses Google Map API to create an instance of google.maps.LatLng to center the map</p>
+    <p>Nunc auctor bibendum eros. Maecenas porta accumsan mauris. Etiam enim enim, elementum sed, bibendum quis, rhoncus non, metus. Fusce neque dolor, adipiscing sed, consectetuer et, lacinia sit amet, quam. Suspendisse wisi quam, consectetuer in, blandit sed, suscipit eu, eros. Etiam ligula enim, tempor ut, blandit nec, mollis eu, lectus. Nam cursus. Vivamus iaculis. Aenean risus purus, pharetra in, blandit quis, gravida a, turpis. Donec nisl. Aenean eget mi. Fusce mattis est id diam. Phasellus faucibus interdum sapien. Duis quis nunc. Sed enim.</p>		
+	<p>After the function verifies that geolocation is supported by the browser, calls getCurrentPosition and uses Google Map API to create an instance of google.maps.LatLng to center the map</p>
+    <p>Nunc auctor bibendum eros. Maecenas porta accumsan mauris. Etiam enim enim, elementum sed, bibendum quis, rhoncus non, metus. Fusce neque dolor, adipiscing sed, consectetuer et, lacinia sit amet, quam. Suspendisse wisi quam, consectetuer in, blandit sed, suscipit eu, eros. Etiam ligula enim, tempor ut, blandit nec, mollis eu, lectus. Nam cursus. Vivamus iaculis. Aenean risus purus, pharetra in, blandit quis, gravida a, turpis. Donec nisl. Aenean eget mi. Fusce mattis est id diam. Phasellus faucibus interdum sapien. Duis quis nunc. Sed enim.</p>		
+	<p>After the function verifies that geolocation is supported by the browser, calls getCurrentPosition and uses Google Map API to create an instance of google.maps.LatLng to center the map</p>
+    <p>Nunc auctor bibendum eros. Maecenas porta accumsan mauris. Etiam enim enim, elementum sed, bibendum quis, rhoncus non, metus. Fusce neque dolor, adipiscing sed, consectetuer et, lacinia sit amet, quam. Suspendisse wisi quam, consectetuer in, blandit sed, suscipit eu, eros. Etiam ligula enim, tempor ut, blandit nec, mollis eu, lectus. Nam cursus. Vivamus iaculis. Aenean risus purus, pharetra in, blandit quis, gravida a, turpis. Donec nisl. Aenean eget mi. Fusce mattis est id diam. Phasellus faucibus interdum sapien. Duis quis nunc. Sed enim.</p>		
+	<p>After the function verifies that geolocation is supported by the browser, calls getCurrentPosition and uses Google Map API to create an instance of google.maps.LatLng to center the map</p>
+    
+	</div>
+	<div data-role="footer" data-position="fixed" >
+		 <div data-role="navbar" >
+		<ul>
+			<li><a href="#page" data-icon="home" class="ui-btn-active ui-state-persist" data-theme="e">HOME</a></li>
+			<li><a href="#page" data-icon="grid"  data-theme="e">Menu</a></li>
+			<li><a href="#page" data-icon="star"  data-theme="f">Favorites</a></li>
+		</ul> 
+	</div>
+</div>
+</div>
+
+<div data-role="page" id="page3" data-add-back-btn="true" data-back-btn-theme="e">
+	<div data-role="header">
+		<h1>Geolocation</h1>
+	</div>
+	<div data-role="content">
+		<<p>This example uses the API watchPosition to track a user position. when using watchPosition the browser will send an ID and regularly keep sending updates until clearWatch is call. The downfall is that it will drain the device battery. </p>
+    <p> Here is used along with Google's Map APIs to Geocode the positions.</p>
+		<figure>
+			<img src="images/photo.jpg" alt="photo" width="120" />
+			<figcaption>Duis a eros lit ora tor quent per conu bia nos tra per.</figcaption>
+		</figure>
+		<!--<div id="superbar"><span class="msg">Current location: <span
+	id="location"></span> </span> <input type="button" value="Stop tracking me!"
+	onclick="stopTracking()" /></div>
+<div id="map_canvas"
+	style="width: 100%; height: 90%; float: left; border: 1px solid black;">
+</div>
+	</div>-->
+    
+	</div>
+	<div data-role="footer">
+		<h4>Covoiturage</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4" data-add-back-btn="true" data-back-btn-theme="e">
+	<div data-role="header">
+		<h1>About Us</h1>
+	</div>
+	<div data-role="content">	
+		<p>Nunc auctor bibendum eros. Maecenas porta accumsan mauris. Etiam enim enim, elementum sed, bibendum quis, rhoncus non, metus. Fusce neque dolor, adipiscing sed, consectetuer et, lacinia sit amet, quam. Suspendisse wisi quam, consectetuer in, blandit sed, suscipit eu, eros. Etiam ligula enim, tempor ut, blandit nec, mollis eu, lectus. Nam cursus. Vivamus iaculis. Aenean risus purus, pharetra in, blandit quis, gravida a, turpis. Donec nisl. Aenean eget mi. Fusce mattis est id diam. Phasellus faucibus interdum sapien. Duis quis nunc. Sed enim.</p>
+	</div>
+	<div data-role="footer">
+		<h4>Covoiturage</h4>
+	</div>
+</div>
+</body>
+</html>
